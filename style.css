@@ -132,18 +132,22 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 30px;
-  color: #012772;
+  color: black;
 }
 
 .card {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   padding: 30px;
   border-radius: 20px;
   transition: 0.4s;
 }
+.card a {
+  text-decoration: none;
+}
 
-.card:hover {
-  transform: translateY(-10px);
+.card :hover{
+  /* transform: translateY(-10px); */
+  color: rgb(18, 18, 20);
 }
 
 /* Scroll animation */
@@ -164,6 +168,10 @@ footer {
   padding: 25px;
   opacity: 0.8;
 }
+#contact a {
+text-decoration: none;
+color: #00040c;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -172,4 +180,6 @@ footer {
     text-align: center;
   }
 }
+
+
 
